@@ -1,0 +1,31 @@
+As i'm studying to renew my Azure Identity & access management certification I want to start blog posting about the things I learned each day.
+
+So here is the first part of the two skills I learned:
+
+Implementing an identity management solutions:
+•	A company can create a brand logo their tenants for users to be able to view when accessing their tenants on azure.  This allows a company to show an internal/external user this is the correct tenant that they are accessing. 
+•	RBAC is important in azure as this can give a user the correct permissions that they would need to do their job duties.   Roles that can be assigned to a user could be:
+o	Global admin -This is the top-level role that give a user all administrative features in Microsoft entra ID and services that uses Microsoft ID. This role also allows a user to reset password for any user or admin.
+o	User administrator – these roles allow a user to create and manage all aspects of users and groups. This allows users admin to manage support tickets, monitor service health, change password for users, helpdesk admin, another user admin.
+•	There is a difference between Azure roles and Entra roles. 
+o	Azure roles have the capabilities to manage groups, subscriptions, resource group.
+o	Microsoft Entra roles- the scope of these roles can be applied to administrative unit.
+o	Does these roles overlap not as if a global admin in azure wanted to elevate their access-to-access management in azure portal the global admin will be granted user access to access those resources in that tenant.
+•	Tenant wide settings are specified to be applied to all resources within your tenant. These settings can be applied in user settings, external collaboration settings, tenant settings.
+o	Tenant wide settings- these settings can be applied settings your primary contact to settings a name for tenant.
+o	User settings- can set permission for users to create application or users being able to create security groups.
+o	External collaboration settings- these permissions can allow a user or customer to have the ability to sign in as a guest user.
+•	User accounts can be created and configured in Azure portal or Microsoft entra Id.   There three types of user account:
+o	Cloud identities- these accounts are created within the portal; these users can be apartment of different instance when this account is removed from instance it will delete the account in the other instance as well.
+o	Directory sync identities- these accounts are on-prem within AD when entra connect bring these user account within azure.
+o	Guest account-these account are outside of azure this account can be such as XBOX live account. There source of account is an invited use.
+•	Groups are created to help with managing users in a centralized location when a group is created an admin can assign roles to these groups and when users are added to the group, they will get all the required permissions they need to do their day to day their account. When a user is removed from this group all their permissions will be removed as well.
+•	 Microsoft has added a new feature of being able to assign licenses to groups this give the capability for a user to be assigned to a group and receive all the licensing the user would need to access products and services.  The downfall with this is that when a user is added to a group a company would want to make sure they have the number of licenses it needs for that group (example- If a group has 500 members in the group the group must have 500 licenses to support that group or licenses will not be distributed until that licensing agreement is met for those users.)
+•	Devices- A device can be registered, joined, hybrid entra joined device.
+o	A registered device -gives the capability for a user to register their device with Microsoft entra after providing a local Microsoft account on a win10 device then that account is connected to Microsoft entra account where access to organizational resources is accessed.   Admin can control registered devices by using tools like MDM to enforce a device to be compliant and use conditional access polices to be applied to a device to meet identity conditions.
+o	Joined devices-A joined device that will be signed into with a Microsoft entra account and conditional access polices are applied to the device identity. These devices give the capability of a device being joined to tenant where an admin can use Microsoft Intune to make sure the device is compliant, can utilize configuration manager to make application available.  This will be good for Out of box experiences, bulk enrollments, or windows autopilot.
+o	Hybrid devices- These devices are on prem adjoined devices and registered to Microsoft entra directory.
+•	Administrative Units- Administrative units are used to group multiple resources together inside of a container, AU can only contain users, groups, devices. AU can also have administrative permissions assigned, assigned roles, application administrator roles, application ownership, emergency access. 
+ 
+
+
